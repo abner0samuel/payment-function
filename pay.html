@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay.css">
+    <title>pay with card</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head_container">
+            <h1>Enter Payment Information</h1>
+        </div>
+        <div class="card_infor">
+                <h2>card Information</h2>
+                <div class="first_input1">
+                    <label for="postal_code">postal code</label>
+                    <label for="card_cvv">CVV</label>
+                </div>
+               <div class="first_input">
+                    <input required type="number" name="postal_code" id="postal_code">
+                    <input required type="text" name="card_cvv" id="card_cvv">
+               </div>
+                <label for="name_on_card">name on card</label>
+                <input class="input" required type="text" name="name_card" id="name_on_card">
+                <label for="card_num">card number</label>
+                <input class="input" required type="number" name="card_number" max=15 min=10 id="card_num">
+                <label for="Month_year">Expiration Date</label>
+                <span id="validExpDate" class="validate-check date-check">&nbsp;</span>
+                <div class="row">
+                    <div class="col-6" id="monthContainer">
+                        <select name="ExpiryMonth" autocomplete="cc-exp-month" id="Month" class="form-control" aria-label="Select Expiration Date combo box Month collapsed">
+                            <option value="Month">Month</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="col-6" id="yearContainer">
+                        <select name="ExpiryYear" autocomplete="cc-exp-year" id="Year" class="form-control" aria-label="Select Expiration Date combo box Year collapsed">
+                            <option value="Year">Year</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                    <option value="2033">2033</option>
+                                    <option value="2034">2034</option>
+                                    <option value="2035">2035</option>
+                                    <option value="2036">2036</option>
+                                    <option value="2037">2037</option>
+                                    <option value="2038">2038</option>
+                                    <option value="2039">2039</option>
+                                    <option value="2040">2040</option>
+                                    <option value="2041">2041</option>
+                                    <option value="2042">2042</option>
+                                    <option value="2043">2043</option>
+                                    <option value="2044">2044</option>
+                                    <option value="2045">2045</option>
+                                    <option value="2046">2046</option>
+                                    <option value="2047">2047</option>
+                                    <option value="2048">2048</option>
+                                    <option value="2049">2049</option>
+        
+                        </select>
+                    </div>
+                </div>
+                <input type="button" value="make payment" id="btn">
+            </div>
+        
+    </div>
+    
+</body>
+</html>
